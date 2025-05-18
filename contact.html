@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Əlaqə - Geyim Mağazası</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <h1>Əlaqə</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Səhifə</a></li>
+        <li><a href="about.html">Haqqımızda</a></li>
+        <li><a href="contact.html" class="active">Əlaqə</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Bizimlə Əlaqə Saxlayın</h2>
+    <p>Bizə mesaj göndərmək üçün formu doldurun:</p>
+
+    <form action="mailto:info@geyinshop.az" method="post" enctype="text/plain">
+      <label for="name">Adınız:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email ünvanınız:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Mövzu:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Mesajınız:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Göndər</button>
+    </form>
+
+    <h3>Əlavə Əlaqə Məlumatı</h3>
+    <ul>
+      <li><i class="fas fa-envelope"></i> <a href="mailto:info@geyinshop.az">info@geyinshop.az</a></li>
+      <li><i class="fas fa-phone"></i> +994 12 345 67 89</li>
+      <li><i class="fas fa-map-marker-alt"></i> Bakı, Azərbaycan</li>
+    </ul>
+
+    <div class="socials">
+      <a href="https://wa.me/994501234567" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/yourshop" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/yourshop" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+   
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Geyim Mağazası. Bütün hüquqlar qorunur.</p>
+  </footer>
+</body>
+</html>

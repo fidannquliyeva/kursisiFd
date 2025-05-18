@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moda Geyim Mağazası</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <i class="fas fa-store"></i> Fidezza
+    </div>
+    <nav class="navbar">
+      <a href="#">Ana səhifə</a>
+      <a href="#products-section">Məhsullar</a>
+       <a href="cart.html" class="cart-link">
+        Səbət <i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span>
+      </a>
+      <a href="contact.html">Əlaqə</a>
+       <a href="about.html">Haqqımızda</a>
+     
+    </nav>
+  </header>
+  
+ <section class="search-section">
+  <form action="#" method="get">
+    <input type="text" placeholder="Search..." name="search">
+    <button type="submit">Search</button>
+  </form>
+</section>
+
+
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Yeni Kolleksiya 2025</h1>
+    <p>Ən son trendləri bizimlə kəşf edin</p>
+    
+  </section>
+  
+  <!-- Kateqoriyalar -->
+  <section class="categories">
+    <h2>Kateqoriyalar</h2>
+    <div class="category-grid">
+      <button class="category-card" onclick="filterProducts('all')">🛍 Hamısı</button>
+      <button class="category-card" onclick="filterProducts('kisi')">👕 Kişi Geyimləri</button>
+      <button class="category-card" onclick="filterProducts('qadin')">👗 Qadın Geyimləri</button>
+      <button class="category-card" onclick="filterProducts('usaq')">🧒 Uşaq Geyimləri</button>
+      <button class="category-card" onclick="filterProducts('aksesuar')">🎒 Aksesuarlar</button>
+    </div>
+  </section>
+
+  <!-- Məhsullar -->
+  <section class="products-section" id="products-section">
+    <h2>Məhsullar</h2>
+    <div class="products-grid" id="products-container">
+      <!-- JavaScript ilə doldurulacaq -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ModaGeyim. Bütün hüquqlar qorunur.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Məhsul Detalları Modalı -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-image" src="" alt="Məhsul şəkli" />
+    <h3 id="modal-name"></h3>
+    <p id="modal-price"></p>
+  </div>
+</div>
+
+</body>
+</html>
